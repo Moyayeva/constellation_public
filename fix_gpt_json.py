@@ -35,7 +35,7 @@ def json_formatting(context):
                         message["role"] = value["message"]["author"]["role"]
                         message["ts"] = value["message"]["create_time"]
                         if msg != "":
-                            message["context"] = msg
+                            message["content"] = msg
                         if thoughts != "":
                             message["thoughts"] = thoughts
                         fixed_context.append(message)
